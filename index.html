@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Symphony | Indian Restaurant</title>
+    <link rel="stylesheet" href="restauraunt/index.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Spice Symphony</span>
+            <div class="nav-links">
+                <a href="#about">About Us</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#reservation">Book a Table</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to Spice Symphony</h1>
+        <p>Experience Authentic Indian Flavors & Spices</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </header>
+
+    <section id="about" class="section">
+        <h2>Our Story</h2>
+        <p>Founded in 1998, Spice Symphony brings the rich culinary heritage of India straight to your plate. We use traditional clay tandoor ovens and freshly ground spices to prepare dishes that are rich in aroma and authentic flavor.</p>
+    </section>
+
+    <section id="menu" class="section gray-bg">
+        <h2>The Royal Menu</h2>
+        <p class="section-subtitle">Freshly prepared everyday with authentic heritage spices.</p>
+        
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="category-header">
+                    <td colspan="3">Starters & Appetizers</td>
+                </tr>
+                <tr>
+                    <td class="item-name">Samosa Chaat</td>
+                    <td>Crispy pastry triangles with spiced potatoes, crushed and topped with chickpeas and yogurt.</td>
+                    <td class="item-price">$7.99</td>
+                </tr>
+                <tr>
+                    <td class="item-name">Paneer Tikka</td>
+                    <td>Cubes of cottage cheese marinated in spiced yogurt and grilled in a clay oven.</td>
+                    <td class="item-price">$11.50</td>
+                </tr>
+
+                <tr class="category-header">
+                    <td colspan="3">Main Course</td>
+                </tr>
+                <tr>
+                    <td class="item-name">Butter Chicken</td>
+                    <td>Tender tandoori chicken simmered in a smooth, rich tomato and creamy butter gravy.</td>
+                    <td class="item-price">$16.99</td>
+                </tr>
+                <tr>
+                    <td class="item-name">Chana Masala</td>
+                    <td>Soft chickpeas cooked in a deeply flavorful onion-tomato gravy with traditional spices.</td>
+                    <td class="item-price">$13.50</td>
+                </tr>
+                <tr>
+                    <td class="item-name">Lamb Biryani</td>
+                    <td>Fragrant basmati rice layered with slow-cooked spiced lamb, saffron, and mint.</td>
+                    <td class="item-price">$19.99</td>
+                </tr>
+
+                <tr class="category-header">
+                    <td colspan="3">Breads & Desserts</td>
+                </tr>
+                <tr>
+                    <td class="item-name">Garlic Naan</td>
+                    <td>Leavened tandoor-baked flatbread brushed with garlic butter.</td>
+                    <td class="item-price">$3.50</td>
+                </tr>
+                <tr>
+                    <td class="item-name">Gulab Jamun</td>
+                    <td>Warm, sweet milk-solid dumplings soaked in a cardamom sugar syrup.</td>
+                    <td class="item-price">$5.99</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="reservation" class="section">
+        <h2>Book A Table</h2>
+        <p>Fill out the basic form below to request a table reservation.</p>
+        
+        <div class="form-container">
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Your table request has been submitted!');">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <select id="guests">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5+ People</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn submit-btn">Reserve Table</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Spice Symphony Indian Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
